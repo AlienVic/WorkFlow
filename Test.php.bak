@@ -1,0 +1,34 @@
+<?php
+require_once('base.php');
+
+
+//require_once('LoginBusiness.php');
+require_once('BaseService.php');
+//require_once('CommBusiness.php');
+
+
+
+/**
+ * ¥í¥°¥¤¥ó™CÄÜ¡¡¥³¥ó¥È¥í©`¥ë
+ *
+ * @author zhao
+ * @version 2011/08/16
+ */
+//TplConstTitle::setPageTitle($smarty, 'Home');
+//TplConstTitle::setTplTitle($smarty, 'User','New');
+$service = new BaseService();
+$tablename = "m_company";
+$data['name'] = "lzg";
+$data['code'] = "201";
+$data['type'] = "1";
+$where = "id='4'";
+$service->Update($tablename,$data,$where);
+
+
+
+
+
+
+
+
+?>
